@@ -1,0 +1,18 @@
+[package]
+name = "zip_codes"
+version = "0.0.1"
+authors = ["Skyler Lipthay <skyler.lipthay@gmail.com>"]
+description = "A lookup table for all primary U.S. ZIP codes."
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/SkylerLipthay/zip_codes"
+documentation = "http://skylerlipthay.github.io/zip_codes/doc/zip_codes/"
+build = "build.rs"
+
+[dependencies]
+phf = "*"
+
+[build-dependencies]
+csv = "*"
+phf_codegen = "*"
+rustc-serialize = "*"
