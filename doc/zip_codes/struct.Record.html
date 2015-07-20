@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Record` struct in crate `zip_codes`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Record">
+
+    <title>zip_codes::Record - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>zip_codes</a></p><script>window.sidebarCurrent = {name: 'Record', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>zip_codes</a>::<wbr><a class='struct' href=''>Record</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-5' class='srclink' href='../src/zip_codes/lib.rs.html#14-33' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Record {
+    pub zip_code: &amp;'static <a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>,
+    pub zip_code_type: <a class='enum' href='../zip_codes/enum.Type.html' title='zip_codes::Type'>Type</a>,
+    pub city: &amp;'static <a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>,
+    pub state: &amp;'static <a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>,
+    pub coordinates: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, <a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>)</a>&gt;,
+    pub is_decommissioned: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>,
+    pub tax_returns_filed: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>&gt;,
+    pub estimated_population: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>&gt;,
+    pub total_wages: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>&gt;,
+}</pre><div class='docblock'><p>Information for a single ZIP code.</p>
+</div><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                                  <td id='structfield.zip_code'><code>zip_code</code></td><td><div class='docblock'><p>The 5-digit ZIP code.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.zip_code_type'><code>zip_code_type</code></td><td><div class='docblock'><p>The ZIP code classification.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.city'><code>city</code></td><td><div class='docblock'><p>The city to which the ZIP code belongs (all uppercase).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.state'><code>state</code></td><td><div class='docblock'><p>The state to which the ZIP code belongs (two letter abbreviation).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.coordinates'><code>coordinates</code></td><td><div class='docblock'><p>Latitude and longitude</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.is_decommissioned'><code>is_decommissioned</code></td><td><div class='docblock'><p>If <code>true</code>, the ZIP code is historical; if <code>false</code>, the ZIP code is current.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.tax_returns_filed'><code>tax_returns_filed</code></td><td><div class='docblock'><p>The number of individual tax returns filed as of 2008.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.estimated_population'><code>estimated_population</code></td><td><div class='docblock'><p>The estimated population of the area of the ZIP code.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.total_wages'><code>total_wages</code></td><td><div class='docblock'><p>Total yearly wages of the population.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../zip_codes/struct.Record.html' title='zip_codes::Record'>Record</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../zip_codes/struct.Record.html' title='zip_codes::Record'>Record</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../zip_codes/struct.Record.html' title='zip_codes::Record'>Record</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard Shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search Tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+            <p>
+                Search functions by type signature (e.g.
+                <code>vec -> usize</code>)
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "zip_codes";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

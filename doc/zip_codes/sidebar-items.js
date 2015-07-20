@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Type","The classification of a ZIP code."]],"fn":[["map","Returns a reference to a static lookup table for all primary U.S. ZIP codes."]],"struct":[["Record","Information for a single ZIP code."]],"type":[["Map",""]]});
