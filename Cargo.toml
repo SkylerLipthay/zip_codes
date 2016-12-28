@@ -10,9 +10,9 @@ documentation = "http://skylerlipthay.github.io/zip_codes/doc/zip_codes/"
 build = "build.rs"
 
 [dependencies]
-phf = "*"
+phf = "0.7"
 
 [build-dependencies]
-csv = "*"
-phf_codegen = "*"
-rustc-serialize = "*"
+csv = "0.14"
+phf_codegen = "0.7"
+rustc-serialize = "0.3"
