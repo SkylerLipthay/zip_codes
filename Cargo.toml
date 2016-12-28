@@ -1,6 +1,6 @@
 [package]
 name = "zip_codes"
-version = "0.0.1"
+version = "0.1.0"
 authors = ["Skyler Lipthay <skyler.lipthay@gmail.com>"]
 description = "A lookup table for all primary U.S. ZIP codes."
 readme = "README.md"
