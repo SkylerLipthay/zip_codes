@@ -2,6 +2,7 @@ extern crate csv;
 extern crate phf_codegen;
 extern crate rustc_serialize;
 
+use std::env;
 use std::fs::File;
 use std::io::{BufWriter, Write};
 use std::path::Path;
@@ -60,7 +61,7 @@ impl TempRecord {
 }
 
 fn main() {
-    let path = Path::new(env!("OUT_DIR")).join("codegen.rs");
+    let path = Path::new(&env::var_os("OUT_DIR").unwrap()).join("codegen.rs");
     let mut file = BufWriter::new(File::create(&path).unwrap());
 
     write!(&mut file, "static ZIP_CODES: phf::Map<&'static str, Record> = ").unwrap();
